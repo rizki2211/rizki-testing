@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Antrian FIFO dan SJF Interaktif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistem Antrian FIFO dan SJF</h1>
+        <div class="input-section">
+            <h2>Masukkan Proses</h2>
+            <div class="input-group">
+                <label for="processName">Nama Proses:</label>
+                <input type="text" id="processName" placeholder="Contoh: P1">
+                <span class="error-message" id="nameError"></span>
+            </div>
+            <div class="input-group">
+                <label for="burstTime">Burst Time (ms):</label>
+                <input type="number" id="burstTime" placeholder="Contoh: 5" min="1">
+                <span class="error-message" id="timeError"></span>
+            </div>
+            <div class="button-group">
+                <button onclick="addProcess()">Tambah Proses</button>
+                <button onclick="resetQueue()">Reset Antrian</button>
+            </div>
+        </div>
+        <div class="queue-section">
+            <h2>Antrian Proses</h2>
+            <div id="queueList"></div>
+        </div>
+        <div class="control-section">
+            <h2>Pilih Metode Scheduling</h2>
+            <button onclick="runSimulation('FIFO')">Jalankan FIFO</button>
+            <button onclick="runSimulation('SJF')">Jalankan SJF</button>
+        </div>
+        <div class="result-section">
+            <h2>Hasil Simulasi</h2>
+            <div id="loading" class="loading">Memproses...</div>
+            <div id="ganttChart"></div>
+            <table id="resultTable">
+                <thead>
+                    <tr>
+                        <th>Proses</th>
+                        <th>Burst Time (ms)</th>
+                        <th>Waiting Time (ms)</th>
+                        <th>Turnaround Time (ms)</th>
+                    </tr>
+                </thead>
+                <tbody id="resultBody"></tbody>
+            </table>
+            <div id="summary"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

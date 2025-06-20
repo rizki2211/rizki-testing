@@ -1,0 +1,197 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Container styling */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+    color: #0000ff; /* Biru untuk header */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #0000ff; /* Biru untuk subheader */
+    margin-bottom: 10px;
+}
+
+/* Input section */
+.input-section {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #0000ff; /* Biru untuk label */
+}
+
+.input-group input {
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #0000ff;
+    outline: none;
+}
+
+.error-message {
+    color: #ff0000; /* Merah untuk error */
+    font-size: 0.9em;
+    display: none;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.button-group button {
+    padding: 10px 20px;
+    background-color: #0000ff; /* Biru untuk tombol */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-group button:hover {
+    background-color: #0056b3;
+}
+
+/* Queue section */
+.queue-section {
+    margin-bottom: 20px;
+}
+
+#queueList {
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+}
+
+#queueList p {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Control section */
+.control-section {
+    margin-bottom: 20px;
+}
+
+.control-section button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #0000ff; /* Biru untuk tombol */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.control-section button:hover {
+    background-color: #0056b3;
+}
+
+/* Result section */
+.result-section {
+    margin-bottom: 20px;
+}
+
+#loading {
+    display: none;
+    color: #0000ff;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+#ganttChart {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gantt-block {
+    height: 30px;
+    margin: 2px;
+    padding: 5px;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Table styling */
+#resultTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#resultTable th, #resultTable td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+#resultTable th {
+    background-color: #0000ff; /* Biru untuk header tabel */
+    color: #fff;
+}
+
+#resultTable td {
+    color: #008000; /* Hijau untuk isi tabel */
+}
+
+#resultTable tr {
+    animation: fadeIn 0.5s ease-in;
+}
+
+#summary {
+    margin-top: 10px;
+    color: #008000; /* Hijau untuk summary */
+}
+
+/* Warna untuk pesan */
+.success {
+    color: #008000; /* Hijau untuk sukses */
+}
+
+.error {
+    color: #ff0000; /* Merah untuk error */
+}
+
+/* Animasi fade-in */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
